@@ -32,7 +32,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Content Include="../../readme.md" Pack="true" PackagePath="" />
+		<Content Include="../readme.md" Pack="true" PackagePath="" />
 	</ItemGroup>
 
 	<ItemGroup>

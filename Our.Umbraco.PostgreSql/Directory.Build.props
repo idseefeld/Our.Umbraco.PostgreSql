@@ -22,11 +22,11 @@
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
-		<PackageOutputPath>Z:\nuget.local</PackageOutputPath>
+		<PackageOutputPath>Z:\nuget.local\v18</PackageOutputPath>
 	</PropertyGroup>
 	
 	<ItemGroup>
-		<None Include="..\..\postgresql.png" Pack="true" PackagePath=""/>
-		<None Include="..\..\LICENSE" Pack="true" PackagePath=""/>
+		<None Include="..\postgresql.png" Pack="true" PackagePath=""/>
+		<None Include="..\LICENSE" Pack="true" PackagePath=""/>
 	</ItemGroup>
 </Project>
