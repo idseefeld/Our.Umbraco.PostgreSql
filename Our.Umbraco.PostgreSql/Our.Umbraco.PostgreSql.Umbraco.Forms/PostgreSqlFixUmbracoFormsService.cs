@@ -56,6 +56,7 @@ namespace Our.Umbraco.PostgreSql.Umbraco.Forms
 
         private bool IsUfCommand(DbCommand cmd) =>
             string.IsNullOrEmpty(cmd.CommandText)
+                || cmd.CommandText.Contains(" umbracoUser")
                 || cmd.CommandText.Contains(" UF")
                 || cmd.CommandText.Contains(" [UF")
                 || cmd.CommandText.Contains(" \"UF")
@@ -388,6 +389,9 @@ namespace Our.Umbraco.PostgreSql.Umbraco.Forms
                     }
                     switch (switchText)
                     {
+                        case "SELECT id FROM umbracoUser":
+                            cmd.CommandText = "SELECT id FROM \"umbracoUser\"";
+                            break;
                         case "SELECT \"Id\" AS \"Id\", \"Form\" AS \"Form\", \"Created\" AS \"Created\", \"Updated\" AS \"Updated\", \"CurrentPage\" AS \"CurrentPage\", \"UmbracoPageId\" AS \"UmbracoPageId\", \"UmbracoPageKey\" AS \"UmbracoPageKey\", \"IP\" AS \"IP\", \"MemberKey\" AS \"MemberKey\", \"UniqueId\" AS \"UniqueId\", \"State\" AS \"StateAsString\", \"RecordData\" AS \"RecordData\", \"Culture\" AS \"Culture\", \"AdditionalData\" AS \"AdditionalData\" FROM \"UFRecords\"\nWHERE (Created >= @p0 AND Created <= @p1)\nAND (Form = @p2)":
                             cmd.CommandText = "SELECT \"Id\" AS \"Id\", \"Form\" AS \"Form\", \"Created\" AS \"Created\", \"Updated\" AS \"Updated\", \"CurrentPage\" AS \"CurrentPage\", \"UmbracoPageId\" AS \"UmbracoPageId\", \"UmbracoPageKey\" AS \"UmbracoPageKey\", \"IP\" AS \"IP\", \"MemberKey\" AS \"MemberKey\", \"UniqueId\" AS \"UniqueId\", \"State\" AS \"StateAsString\", \"RecordData\" AS \"RecordData\", \"Culture\" AS \"Culture\", \"AdditionalData\" AS \"AdditionalData\" FROM \"UFRecords\" WHERE (\"Created\" >= @p0 AND \"Created\" <= @p1) AND (\"Form\" = @p2)";
                             break;
