@@ -2,9 +2,10 @@
 <Project>
 	<PropertyGroup>
 		<VersionPrefix>17.9.0</VersionPrefix>
+		<ReleaseCandidateSufix>-rc3</ReleaseCandidateSufix>
 		<AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
 		<FileVersion>$(VersionPrefix)</FileVersion>
-		<Version>$(VersionPrefix)-rc2</Version>
+		<Version>$(VersionPrefix)$(ReleaseCandidateSufix)</Version>
 		<Authors>Dirk Seefeld</Authors>
 		<PackageIcon>postgresql.png</PackageIcon>
 		<PackageReadmeFile>readme.md</PackageReadmeFile>
