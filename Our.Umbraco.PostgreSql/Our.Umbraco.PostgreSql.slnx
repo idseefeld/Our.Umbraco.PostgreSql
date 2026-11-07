@@ -12,6 +12,7 @@
   </Folder>
   <Folder Name="/Solution Items/">
     <File Path="../.gitignore" />
+    <File Path="../.gitmodules" />
     <File Path="Directory.Build.props" />
     <File Path="postgresql.png" />
   </Folder>
