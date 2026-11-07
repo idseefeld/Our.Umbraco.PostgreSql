@@ -1,4 +1,9 @@
 <Solution>
+  <Folder Name="/NPoco/">
+    <Project Path="../NPocoNet10/src/NPoco.Abstractions/NPoco.Abstractions.csproj" />
+    <Project Path="../NPocoNet10/src/NPoco.SqlServer/NPoco.SqlServer.csproj" />
+    <Project Path="../NPocoNet10/src/NPoco/NPoco.csproj" />
+  </Folder>
   <Folder Name="/PostgreSQL/">
     <Project Path="Our.Umbraco.PostgreSql.EFCore/Our.Umbraco.PostgreSql.EFCore.pack.csproj" />
     <Project Path="Our.Umbraco.PostgreSql.Umbraco.Forms/Our.Umbraco.PostgreSql.Umbraco.Forms.pack.csproj" />
