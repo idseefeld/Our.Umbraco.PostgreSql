@@ -6,8 +6,5 @@
   <Folder Name="/Solution Items/">
     <File Path="Directory.Build.props" />
   </Folder>
-  <Folder Name="/Solution Items/core/">
-    <File Path="Our.Umbraco.PostgreSql/wwwroot/App_Plugins/Our.Umbraco.PostgreSql/umbraco-package.json" />
-  </Folder>
   <Project Path="Umbraco19.www/Umbraco19.www.csproj" Id="551efa1b-c4e6-4f94-9ccf-69362c792c59" />
 </Solution>
