@@ -4,12 +4,8 @@
     <Project Path="Our.Umbraco.PostgreSql/Our.Umbraco.PostgreSql.pack.csproj" />
   </Folder>
   <Folder Name="/Solution Items/">
-    <File Path="../.gitmodules" />
     <File Path="Directory.Build.props" />
     <File Path="postgresql.png" />
-  </Folder>
-  <Folder Name="/Solution Items/core/">
-    <File Path="Our.Umbraco.PostgreSql/wwwroot/App_Plugins/Our.Umbraco.PostgreSql/umbraco-package.json" />
   </Folder>
   <Project Path="Umbraco17.www/Umbraco17.www.csproj">
     <Build Solution="Release|*" Project="false" />

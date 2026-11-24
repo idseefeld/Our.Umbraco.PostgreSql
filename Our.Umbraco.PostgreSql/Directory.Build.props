@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project>
 	<PropertyGroup>
-		<VersionPrefix>17.9.0</VersionPrefix>
-		<ReleaseCandidateSufix>-rc3</ReleaseCandidateSufix>
+		<VersionPrefix>17.10.0</VersionPrefix>
+		<ReleaseCandidateSufix>-rc</ReleaseCandidateSufix>
 		<AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
 		<FileVersion>$(VersionPrefix)</FileVersion>
 		<Version>$(VersionPrefix)$(ReleaseCandidateSufix)</Version>
