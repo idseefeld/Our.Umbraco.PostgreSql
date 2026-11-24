@@ -1,4 +1,0 @@
-[submodule "NPocoNet10"]
-	path = NPocoNet10
-	url = https://github.com/idseefeld/NPoco.git
-	branch = net10
