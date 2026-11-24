@@ -417,3 +417,4 @@ FodyWeavers.xsd
 *.msm
 *.msp
 /Our.Umbraco.PostgreSql/Umbraco19.www
+/Our.Umbraco.PostgreSql/Umbraco20.www
